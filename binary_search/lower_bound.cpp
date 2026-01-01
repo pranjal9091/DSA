@@ -3,18 +3,16 @@ using namespace std;
 int main(){
     int n;
     cin>>n;
-    int maxi=INT_MIN;
+    
     vector<int>arr(n);
     for(int i=0;i<n;i++){
         cin>>arr[i];
-        maxi=max(arr[i],maxi);
+        
     }
     int lb;
     cin>>lb;
-    if(lb>maxi){
-        cout<<n<<endl;
-    }
-    else{int ans=-1;
+    
+    int ans=n;
     int low=0;
     int high=n-1;
     while(low<=high){
@@ -29,4 +27,3 @@ int main(){
    }
     }
     cout<<ans<<endl;}
-}
