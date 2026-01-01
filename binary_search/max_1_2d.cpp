@@ -3,7 +3,7 @@ using namespace std;
 int lb(vector<int> &arr,int n,int x){
     int low=0;
     int high=n-1;
-    int ans=-1;
+    int ans=n;
     while(low<=high){
         int mid=low+(high-low)/2;
         if(arr[mid]<x){
