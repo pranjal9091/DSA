@@ -9,7 +9,7 @@ int main(){
     }
     int lb;
     cin>>lb;
-    int ans=arr[n-1];
+    int ans=-1;
     int low=0;
     int high=n-1;
     while(low<=high){
@@ -18,7 +18,7 @@ int main(){
             low=mid+1;
         }
    else{
-    ans=min(arr[mid],ans);
+    ans=mid;
     high=mid-1;
 
    }
